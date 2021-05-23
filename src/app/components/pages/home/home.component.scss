@@ -1,0 +1,32 @@
+@import "src/scss/variables";
+
+.container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4,24%);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: center;
+  .post-card {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    background: #673ab7;
+    color: $default_white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+}
+.fuck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+mat-card {
+  margin: 10px 0;
+}

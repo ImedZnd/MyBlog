@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./scss/reset";
+@import "./scss/variables";
+@import"./scss/_categorychips";
+@import '~ngx-toastr/toastr';
+.active {
+  border: 1px solid $default_white;
+}
+
+.container-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

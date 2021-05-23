@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myblog-853ce": {
+      "hosting": {
+        "Blog": [
+          "myblog-853ce"
+        ]
+      }
+    }
+  }
+}

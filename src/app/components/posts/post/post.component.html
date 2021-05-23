@@ -1,0 +1,21 @@
+<mat-card-header>
+  <mat-card-title>
+    <a [routerLink]="['/post', post.id]" matTooltip=" title">
+      {{ post.titlePost }}
+    </a>
+  </mat-card-title>
+</mat-card-header>
+<img matCardImage [src]="post.imagePost"  matTooltip=" Picture" />
+<mat-card-content>
+  <p class="content"  matTooltip="Content">
+    {{ post.contentPost }}
+  </p>
+</mat-card-content>
+<mat-divider></mat-divider>
+<mat-card-actions>
+  <mat-chip-list>
+    <mat-chip *ngFor="let tag of post.tagsPost" [ngClass]="tag"  matTooltip=" Tags">
+      {{ tag }}
+    </mat-chip>
+  </mat-chip-list>
+</mat-card-actions>
